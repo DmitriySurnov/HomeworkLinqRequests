@@ -12,7 +12,7 @@ namespace HomeworkLinqRequests
         public FormLinqRequests()
         {
             InitializeComponent();
-            db = new ModelDataBase.DataBase();
+            db = new DataBase();
             db.InitStaticDb();
         }
 
