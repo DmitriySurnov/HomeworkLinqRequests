@@ -4,12 +4,12 @@
     {
         public int Id { get; private set; }
 
-        public string Name { get; private set; }
+        public string NameSpell { get; private set; }
 
-        public Spell(int id, string name)
+        public Spell(int id, string nameSpell)
         {
             Id = id;
-            Name = name;
+            NameSpell = nameSpell;
         }
     }
 }

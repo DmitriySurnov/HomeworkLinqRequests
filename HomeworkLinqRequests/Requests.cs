@@ -28,7 +28,7 @@ namespace HomeworkLinqRequests
         {
             return Conversion(
                 db.Characters.Select(x => (x.Name,
-                     db.CharactersClass.First(y => y.Id == x.CharacterClassId).Name))
+                     db.CharactersClass.First(y => y.Id == x.CharacterClassId).NameClass))
                 .ToList()
                 );
         }
@@ -39,7 +39,7 @@ namespace HomeworkLinqRequests
                 db.CharacterClassBuild.Select(x => (
                      db.Characters.First(z => z.CharacterClassId == 
                         db.CharactersClass.First(y => x.CharacterClassId == y.Id).Id).Name,
-                     db.Spell.First(y => y.Id == x.CharacterClassId).Name))
+                     db.Spell.First(y => y.Id == x.SpellId).NameSpell))
                 .ToList()
                 );
         }
@@ -48,8 +48,8 @@ namespace HomeworkLinqRequests
         {
             return Conversion(
                 db.CharacterClassBuild.Select(x => (
-                     db.CharactersClass.First(y => x.CharacterClassId == y.Id).Name,
-                     db.Spell.First(y => y.Id == x.CharacterClassId).Name))
+                     db.CharactersClass.First(y => x.CharacterClassId == y.Id).NameClass,
+                     db.Spell.First(y => y.Id == x.SpellId).NameSpell))
                 .ToList()
                 );
         }

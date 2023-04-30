@@ -67,7 +67,7 @@ namespace HomeworkLinqRequests
             AddRowsDataGridView(Requests.NameOfPlayersAndNameOfSpell(db));
         }
 
-        private void RuttonRequesNameOfClassAndNameOfSpell_Click(object sender, EventArgs e)
+        private void ButtonRequesNameOfClassAndNameOfSpell_Click(object sender, EventArgs e)
         {
             ClearDataGridView();
             AddColumnsDataGridView(new List<(string, string)> { ("NameClass", "Название класса"), ("Skills", "Умения") });

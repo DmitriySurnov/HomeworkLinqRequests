@@ -88,7 +88,7 @@
             this.buttonRequesNameOfClassAndNameOfSpell.TabIndex = 4;
             this.buttonRequesNameOfClassAndNameOfSpell.Text = "Вывести Название всех классов играков и их умения";
             this.buttonRequesNameOfClassAndNameOfSpell.UseVisualStyleBackColor = true;
-            this.buttonRequesNameOfClassAndNameOfSpell.Click += new System.EventHandler(this.RuttonRequesNameOfClassAndNameOfSpell_Click);
+            this.buttonRequesNameOfClassAndNameOfSpell.Click += new System.EventHandler(this.ButtonRequesNameOfClassAndNameOfSpell_Click);
             // 
             // buttonRequestNameOfPlayersAndNameOfClass
             // 
